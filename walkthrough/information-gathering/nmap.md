@@ -18,7 +18,6 @@ nmap -A -p- -T5 <ip>
 993/tcp open  ssl/imaps?
 ...
 ```
-> 6 ports ouverts, 6 vecteurs d'entrée potentiels.
 
 On peut déjà lancer tous les scripts spécifiques à chaque service afin d'avoir plus d'informations.
 
