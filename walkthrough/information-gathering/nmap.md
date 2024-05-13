@@ -1,6 +1,6 @@
 # Nmap
 
-Une fois l'ip de la machine cible trouvée via `arp-scan --localnet`, on peut lancer notre scan `nmap` pour identifier les services ouverts.
+Une fois l'ip de la machine cible trouvée via `arp-scan --localnet`, on peut lancer notre scan `nmap` pour identifier les services actifs.
 
 ```bash
 nmap -A -p- -T5 <ip>
