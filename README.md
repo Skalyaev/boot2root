@@ -7,13 +7,15 @@
 
 ## Summary
 - Information gathering
+    * [Port scanning](walkthrough/information-gathering/nmap.md)
+    * [Web fuzzing](walkthrough/information-gathering/ffuf.md)
 - Exploitation
-  * Port 21 (FTP)
-  * Port 22 (SSH)
-  * Port 80 (HTTP)
-  * Port 443 (HTTPS)
-  * Port 143 (Imap)
-  * Port 993 (Imaps)
+    * [Port 21 (FTP)](walkthrough/exploitation/ftp.md)
+    * [Port 22 (SSH)](walkthrough/exploitation/ssh.md)
+    * [Port 80 (HTTP)](walkthrough/exploitation/http.md)
+    * [Port 443 (HTTPS)](walkthrough/exploitation/https.md)
+    * [Port 143 (Imap)](walkthrough/exploitation/imap.md)
+    * [Port 993 (Imaps)](walkthrough/exploitation/imaps.md)
 - Post-exploitation
-  * SUID binary
-  * `work in progress`
+    * [SUID binary](walkthrough/post-exploitation/suid.md)
+    * `work in progress`
