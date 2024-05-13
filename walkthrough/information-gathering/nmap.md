@@ -31,7 +31,7 @@ nmap -A -p21 -T5 <ip> --script ftp*
 |   Accounts: No valid accounts found
 |_  Statistics: Performed 1002 guesses in 182 seconds, average tps: 5.3
 ```
-> L'erreur 500 nous indique que le serveur FTP est configuré pour s'exécuter dans un environnement chroot, et que le répertoire racine de ce dernier est accessible en écriture. De ce fait vsftpd interdit toute connexion à ce répertoire.
+> Le serveur FTP est configuré pour s'exécuter dans un environnement chroot. Mais comme le répertoire racine de ce dernier est accessible en écriture, vsftpd y interdit toute connexion.
 >
 > A noté que le bruteforce n'a pas abouti, mais ce résultat est potentiellement dû à l'erreur 500.
 
@@ -69,7 +69,7 @@ nmap -A -p80,443 -T5 <ip> --script http*
 |_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
 ...
 ```
-> Les scripts de nmap pour HTTP(S) n'ont rien donné.
+> Les scripts pour HTTP(S) n'ont rien donné.
 
 ### Imap(s)
 ```bash
@@ -81,8 +81,8 @@ nmap -A -p143,993 -T5 <ip> --script imap*
 |_imap-capabilities: ENABLE LITERAL+ IDLE have OK more SASL-IR capabilities STARTTLS IMAP4rev1 ID listed Pre-login LOGINDISABLEDA0001 LOGIN-REFERRALS post-login
 ...
 ```
-> Le bruteforce n'a pas abouti.
->
 > On peut voir les capacités du serveur IMAP.
+>
+> Le bruteforce n'a pas abouti.
 
 `nmap` nous montre bien que les identifiants de connexion aux différents services sont assez robustes.
