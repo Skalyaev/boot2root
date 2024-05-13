@@ -6,20 +6,20 @@ Essayons de voir si nous pouvons trouver des chemins d'accès avec `ffuf`.
 
 ### Port 80 (HTTP)
 ```bash
-ffuf -w <wordlist> -u http://<ip>/FUZZ
+ffuf -w <wordlist> -u http://<ip>/FUZZ -fl 22
 ...
 forum                   [Status: 403, Size: 285, Words: 21, Lines: 11]
 fonts                   [Status: 301, Size: 312, Words: 20, Lines: 10]
 server-status           [Status: 403, Size: 293, Words: 21, Lines: 11]
 ...
 ```
-> '/fonts' est la seul page accessible via HTTP. Cette page affiche le contenu du répertoire du même nom.
+> /fonts est la seul page accessible via HTTP. Cette page affiche le contenu du répertoire du même nom.
 >
-> Ce dernier contient une police de caractère en différents formats (eot, ttf, woff et même svg).
+> Ce dernier contient une police de caractère en différents formats (eot, ttf, woff et svg).
 
 ### Port 443 (HTTPS)
 ```bash
-ffuf -w <wordlist> -u https://<ip>/FUZZ
+ffuf -w <wordlist> -u https://<ip>/FUZZ -fl 22
 ...
 forum                   [Status: 301, Size: 314, Words: 20, Lines: 10]
 webmail                 [Status: 301, Size: 316, Words: 20, Lines: 10]
@@ -27,13 +27,14 @@ phpmyadmin              [Status: 301, Size: 319, Words: 20, Lines: 10]
 server-status           [Status: 403, Size: 294, Words: 21, Lines: 11]
 ...
 ```
-> '/phpmyadmin' & '/webmail' nous amène vers deux pages de login qu'il nous faudra exploiter.
+> /phpmyadmin & /webmail nous amène vers deux pages de login qu'il nous faudra exploiter.
 >
-> '/forum' nous amène vers un forum contenant différentes conversations entre les utilisateurs du service.
+> /forum nous amène vers un forum contenant différentes conversations entre les utilisateurs du service.
 > On peut y voir différents username. Il nous faudra tester entre autre la présence de failles SQL.
 
 Un des topic du forum, nommé 'Probleme login ?' contient des logs:
 <details><summary>Logs</summary>
+  
 ```
 Oct 5 08:44:40 BornToSecHackMe sshd[7482]: input_userauth_request: invalid user test [preauth]
 Oct 5 08:44:40 BornToSecHackMe sshd[7482]: pam_unix(sshd:auth): check pass; user unknown
@@ -340,7 +341,8 @@ Oct 5 17:51:01 BornToSecHackMe CRON[1739]: pam_unix(cron:session): session close
 Oct 5 17:51:15 BornToSecHackMe sshd[1782]: Accepted password for admin from 62.210.32.157 port 56754 ssh2
 Oct 5 17:51:15 BornToSecHackMe sshd[1782]: pam_unix(sshd:session): session opened for user admin by (uid=0)
 ```
-<details>
+</details>
+
 Nous pouvons relever différents identifiants:
 - root
 - admin
