@@ -2,7 +2,7 @@
 
 `nmap` à trouvé différents services web sur les port 80 et 443, les pages d'accueil de ces derniers ne montre rien d'intéressant.
 
-Essayons de voir si nous pouvons trouver des chemins d'accès avec `ffuf`.
+Essayons de voir si nous pouvons trouver d'autres chemins d'accès avec `ffuf`.
 
 ### Port 80 (HTTP)
 ```bash
