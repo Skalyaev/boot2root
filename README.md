@@ -7,15 +7,42 @@
 
 ## Summary
 - Information gathering
-    * [Port scanning](walkthrough/information-gathering/nmap.md)
-    * [Web fuzzing](walkthrough/information-gathering/ffuf.md)
+    * [Port scanning](/1-information-gathering/nmap.md)
+    * [Web fuzzing](/1-information-gathering/ffuf.md)
 - Exploitation
-    * [Port 21 (FTP)](walkthrough/exploitation/ftp.md)
-    * [Port 22 (SSH)](walkthrough/exploitation/ssh.md)
-    * [Port 80 (HTTP)](walkthrough/exploitation/http.md)
-    * [Port 443 (HTTPS)](walkthrough/exploitation/https.md)
-    * [Port 143 (Imap)](walkthrough/exploitation/imap.md)
-    * [Port 993 (Imaps)](walkthrough/exploitation/imaps.md)
+    * Port 21 (FTP)
+    * Port 22 (SSH)
+    * Port 80 (HTTP)
+    * [Port 443 (HTTPS)](/2-exploitation/https.md)
+    * Port 143 (Imap)
+    * Port 993 (Imaps)
 - Post-exploitation
-    * [SUID binary](walkthrough/post-exploitation/suid.md)
+    * SUID binary
     * `work in progress`
+
+## ToDoList
+- [x] Host port scanning `nmap`
+- [x] WebApp fuzzing: `ffuf`
+    * [x] http://<ip>
+    * [x] https://<ip>
+- [ ] Session spoofing check: `msfconsole`
+    * [ ] http://<ip>
+    * [ ] https://<ip>
+    * [ ] https://<ip>/forum
+    * [ ] https://<ip>/webmail
+    * [ ] https://<ip>/phpmyadmin
+- [ ] Command injection check: `msfconsole`
+    * [ ] http://<ip>/fonts
+    * [ ] https://<ip>/forum/index.php
+    * [ ] https://<ip>/webmail/src/login.php
+- [ ] SQLi check: `sqlmap`
+    * [ ] http://<ip>
+    * [ ] https://<ip>
+    * [ ] https://<ip>/forum (no logged)
+    * [ ] https://<ip>/forum (logged)
+    * [ ] https://<ip>/webmail
+    * [ ] https://<ip>/phpmyadmin
+- [ ] File inclusion check: `msfconsole`
+    * [ ] http://<ip>
+    * [ ] https://<ip>
+- `work in progress`

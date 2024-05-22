@@ -1,7 +1,5 @@
 # Nmap
 
-Une fois l'ip de la machine cible trouvée via `arp-scan --localnet`, on peut lancer notre scan `nmap` pour identifier les services actifs.
-
 ```bash
 nmap -A -p- -T5 <ip>
 ...
@@ -19,9 +17,8 @@ nmap -A -p- -T5 <ip>
 ...
 ```
 
-On peut déjà lancer tous les scripts spécifiques à chaque service afin d'avoir plus d'informations.
-
 ### FTP
+
 ```bash
 nmap -A -p21 -T5 <ip> --script ftp*
 ...
@@ -30,11 +27,9 @@ nmap -A -p21 -T5 <ip> --script ftp*
 |   Accounts: No valid accounts found
 |_  Statistics: Performed 1002 guesses in 182 seconds, average tps: 5.3
 ```
-> Le serveur FTP est configuré pour s'exécuter dans un environnement chroot. Mais comme le répertoire racine de ce dernier est accessible en écriture, vsftpd y interdit toute connexion.
->
-> A noté que le bruteforce n'a pas abouti, mais ce résultat est potentiellement dû à l'erreur 500.
 
 ### SSH
+
 ```bash
 nmap -A -p22 -T5 <ip> --script ssh*
 ...
@@ -57,20 +52,18 @@ nmap -A -p22 -T5 <ip> --script ssh*
 |_  Accepted Public Keys: No public keys accepted
 |_ssh-run: Failed to specify credentials and command to run.
 ```
-> On peut voir les méthodes d'authentification supportées, les clés publiques, et les algorithmes de chiffrement utilisés.
->
-> Le bruteforce n'a pas abouti.
 
 ### HTTP(S)
+
 ```bash
 nmap -A -p80,443 -T5 <ip> --script http*
 ...
 |_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
 ...
 ```
-> Les scripts pour HTTP(S) n'ont rien donné.
 
 ### Imap(s)
+
 ```bash
 nmap -A -p143,993 -T5 <ip> --script imap*
 ...
@@ -80,8 +73,3 @@ nmap -A -p143,993 -T5 <ip> --script imap*
 |_imap-capabilities: ENABLE LITERAL+ IDLE have OK more SASL-IR capabilities STARTTLS IMAP4rev1 ID listed Pre-login LOGINDISABLEDA0001 LOGIN-REFERRALS post-login
 ...
 ```
-> On peut voir les capacités du serveur IMAP.
->
-> Le bruteforce n'a pas abouti.
-
-`nmap` nous montre bien que les identifiants de connexion aux différents services sont assez robustes.
