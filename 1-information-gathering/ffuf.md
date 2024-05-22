@@ -2,7 +2,7 @@
 
 ### Port 80 (HTTP)
 
-```bash
+```
 ffuf -w <wordlist> -u http://<ip>/FUZZ -fl 22
 ...
 forum                   [Status: 403, Size: 285, Words: 21, Lines: 11]
@@ -13,7 +13,7 @@ server-status           [Status: 403, Size: 293, Words: 21, Lines: 11]
 
 ### Port 443 (HTTPS)
 
-```bash
+```
 ffuf -w <wordlist> -u https://<ip>/FUZZ -fl 22
 ...
 forum                   [Status: 301, Size: 314, Words: 20, Lines: 10]
@@ -23,7 +23,7 @@ server-status           [Status: 403, Size: 294, Words: 21, Lines: 11]
 ...
 ```
 
-```bash
+```
 ffuf -w <wordlist> -u https://<ip>/forum/FUZZ -fl 81
 ...
 images                  [Status: 301, Size: 325, Words: 20, Lines: 10]
@@ -39,7 +39,7 @@ templates_c             [Status: 301, Size: 330, Words: 20, Lines: 10]
 ...
 ```
 
-```bash
+```
 ffuf -w <wordlist> -u https://<ip>/webmail/FUZZ -fl 1
 ...
 images                  [Status: 301, Size: 327, Words: 20, Lines: 10]
@@ -56,7 +56,7 @@ locale                  [Status: 403, Size: 297, Words: 21, Lines: 11]
 ...
 ```
 
-```bash
+```
 ffuf -w <wordlist> -u https://<ip>/phpmyadmin/FUZZ -fl 127
 ...
 themes                  [Status: 301, Size: 330, Words: 20, Lines: 10]
