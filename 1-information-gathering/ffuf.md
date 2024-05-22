@@ -11,11 +11,6 @@ server-status           [Status: 403, Size: 293, Words: 21, Lines: 11]
 ...
 ```
 
-```bash
-ffuf -w <wordlist> -u http://<ip>/fonts/FUZZ -fl 18
-...
-```
-
 ### Port 443 (HTTPS)
 
 ```bash
