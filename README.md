@@ -35,7 +35,7 @@
     * [ ] `http://<ip>/fonts`
     * [ ] `https://<ip>/forum/index.php`
     * [ ] `https://<ip>/webmail/src/login.php`
-- [ ] SQLi check: `sqlmap`
+- [ ] SQL injection check: `sqlmap`
     * [ ] `http://<ip>`
     * [ ] `https://<ip>`
     * [ ] `https://<ip>/forum` (not logged)
