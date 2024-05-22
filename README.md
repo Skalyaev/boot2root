@@ -42,7 +42,7 @@
     * [ ] `https://<ip>/forum` (logged)
     * [ ] `https://<ip>/webmail` (not logged)
     * [ ] `https://<ip>/phpmyadmin` (not logged)
-- [ ] File inclusion check: `msfconsole`
+- [ ] File inclusion check: `manually` `msfconsole`
     * [ ] `http://<ip>`
     * [ ] `https://<ip>`
 - `work in progress`
