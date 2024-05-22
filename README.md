@@ -38,7 +38,7 @@
 - [ ] SQLi check: `sqlmap`
     * [ ] http://\<ip>
     * [ ] https://\<ip>
-    * [ ] https://\<ip>/forum (no logged)
+    * [ ] https://\<ip>/forum (not logged)
     * [ ] https://\<ip>/forum (logged)
     * [ ] https://\<ip>/webmail (login page)
     * [ ] https://\<ip>/phpmyadmin (login page)
