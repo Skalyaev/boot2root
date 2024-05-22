@@ -40,8 +40,8 @@
     * [ ] `https://<ip>`
     * [ ] `https://<ip>/forum` (not logged)
     * [ ] `https://<ip>/forum` (logged)
-    * [ ] `https://<ip>/webmail` (login page)
-    * [ ] `https://<ip>/phpmyadmin` (login page)
+    * [ ] `https://<ip>/webmail`
+    * [ ] `https://<ip>/phpmyadmin`
 - [ ] File inclusion check: `msfconsole`
     * [ ] `http://<ip>`
     * [ ] `https://<ip>`
