@@ -20,7 +20,7 @@
     * SUID binary
     * `work in progress`
 
-## ToDoList
+## Checklist
 - [x] Host port scanning `nmap`
 - [x] WebApp fuzzing: `ffuf`
     * [x] `http://<ip>`
