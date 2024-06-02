@@ -1,4 +1,4 @@
-# Nmap
+# nmap
 
 ```bash
 nmap -A -p- -T5 $ip
