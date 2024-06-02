@@ -3,67 +3,67 @@
 ### Port 80 (HTTP)
 
 ```bash
-dirb http://192.168.1.15
+dirb http://$ip
 ```
 ```
 ...
----- Scanning URL: http://192.168.1.15/ ----
-+ http://192.168.1.15/cgi-bin/ (CODE:403|SIZE:288)
-==> DIRECTORY: http://192.168.1.15/fonts/
-+ http://192.168.1.15/forum (CODE:403|SIZE:285)
-+ http://192.168.1.15/index.html (CODE:200|SIZE:1025)
-+ http://192.168.1.15/server-status (CODE:403|SIZE:293)
+---- Scanning URL: http://$ip/ ----
++ http://$ip/cgi-bin/ (CODE:403|SIZE:288)
+==> DIRECTORY: http://$ip/fonts/
++ http://$ip/forum (CODE:403|SIZE:285)
++ http://$ip/index.html (CODE:200|SIZE:1025)
++ http://$ip/server-status (CODE:403|SIZE:293)
 ...
 ```
 
 ### Port 443 (HTTPS)
 
 ```bash
-dirb https://192.168.1.15
+dirb https://$ip
 ```
 ```
 ...
----- Scanning URL: https://192.168.1.15/ ----
-+ https://192.168.1.15/cgi-bin/ (CODE:403|SIZE:289)
-==> DIRECTORY: https://192.168.1.15/forum/
-==> DIRECTORY: https://192.168.1.15/phpmyadmin/
-+ https://192.168.1.15/server-status (CODE:403|SIZE:294)
-==> DIRECTORY: https://192.168.1.15/webmail/
+---- Scanning URL: https://$ip/ ----
++ https://$ip/cgi-bin/ (CODE:403|SIZE:289)
+==> DIRECTORY: https://$ip/forum/
+==> DIRECTORY: https://$ip/phpmyadmin/
++ https://$ip/server-status (CODE:403|SIZE:294)
+==> DIRECTORY: https://$ip/webmail/
 
----- Entering directory: https://192.168.1.15/forum/ ----
-+ https://192.168.1.15/forum/backup (CODE:403|SIZE:293)
-+ https://192.168.1.15/forum/config (CODE:403|SIZE:293)
-==> DIRECTORY: https://192.168.1.15/forum/images/
-==> DIRECTORY: https://192.168.1.15/forum/includes/
-+ https://192.168.1.15/forum/index (CODE:200|SIZE:4935)
-+ https://192.168.1.15/forum/index.php (CODE:200|SIZE:4935)
-==> DIRECTORY: https://192.168.1.15/forum/js/
-==> DIRECTORY: https://192.168.1.15/forum/lang/
-==> DIRECTORY: https://192.168.1.15/forum/modules/
-==> DIRECTORY: https://192.168.1.15/forum/templates_c/
-==> DIRECTORY: https://192.168.1.15/forum/themes/
-==> DIRECTORY: https://192.168.1.15/forum/update/
+---- Entering directory: https://$ip/forum/ ----
++ https://$ip/forum/backup (CODE:403|SIZE:293)
++ https://$ip/forum/config (CODE:403|SIZE:293)
+==> DIRECTORY: https://$ip/forum/images/
+==> DIRECTORY: https://$ip/forum/includes/
++ https://$ip/forum/index (CODE:200|SIZE:4935)
++ https://$ip/forum/index.php (CODE:200|SIZE:4935)
+==> DIRECTORY: https://$ip/forum/js/
+==> DIRECTORY: https://$ip/forum/lang/
+==> DIRECTORY: https://$ip/forum/modules/
+==> DIRECTORY: https://$ip/forum/templates_c/
+==> DIRECTORY: https://$ip/forum/themes/
+==> DIRECTORY: https://$ip/forum/update/
 
----- Entering directory: https://192.168.1.15/phpmyadmin/ ----
-+ https://192.168.1.15/phpmyadmin/favicon.ico (CODE:200|SIZE:18902)
-+ https://192.168.1.15/phpmyadmin/index.php (CODE:200|SIZE:7540)
-==> DIRECTORY: https://192.168.1.15/phpmyadmin/js/
-+ https://192.168.1.15/phpmyadmin/libraries (CODE:403|SIZE:301)
-==> DIRECTORY: https://192.168.1.15/phpmyadmin/locale/
-+ https://192.168.1.15/phpmyadmin/phpinfo.php (CODE:200|SIZE:7540)
-+ https://192.168.1.15/phpmyadmin/setup (CODE:401|SIZE:480)
-==> DIRECTORY: https://192.168.1.15/phpmyadmin/themes/
+---- Entering directory: https://$ip/phpmyadmin/ ----
++ https://$ip/phpmyadmin/favicon.ico (CODE:200|SIZE:18902)
++ https://$ip/phpmyadmin/index.php (CODE:200|SIZE:7540)
+==> DIRECTORY: https://$ip/phpmyadmin/js/
++ https://$ip/phpmyadmin/libraries (CODE:403|SIZE:301)
+==> DIRECTORY: https://$ip/phpmyadmin/locale/
++ https://$ip/phpmyadmin/phpinfo.php (CODE:200|SIZE:7540)
++ https://$ip/phpmyadmin/setup (CODE:401|SIZE:480)
+==> DIRECTORY: https://$ip/phpmyadmin/themes/
 
----- Entering directory: https://192.168.1.15/webmail/ ----
-+ https://192.168.1.15/webmail/class (CODE:403|SIZE:294)
-==> DIRECTORY: https://192.168.1.15/webmail/config/
-+ https://192.168.1.15/webmail/functions (CODE:403|SIZE:298)
-+ https://192.168.1.15/webmail/help (CODE:403|SIZE:293)
-==> DIRECTORY: https://192.168.1.15/webmail/images/
-+ https://192.168.1.15/webmail/include (CODE:403|SIZE:296)
-+ https://192.168.1.15/webmail/index.php (CODE:302|SIZE:0)
-+ https://192.168.1.15/webmail/locale (CODE:403|SIZE:295)
-==> DIRECTORY: https://192.168.1.15/webmail/plugins/
-==> DIRECTORY: https://192.168.1.15/webmail/src/
-==> DIRECTORY: https://192.168.1.15/webmail/themes/
+---- Entering directory: https://$ip/webmail/ ----
++ https://$ip/webmail/class (CODE:403|SIZE:294)
+==> DIRECTORY: https://$ip/webmail/config/
++ https://$ip/webmail/functions (CODE:403|SIZE:298)
++ https://$ip/webmail/help (CODE:403|SIZE:293)
+==> DIRECTORY: https://$ip/webmail/images/
++ https://$ip/webmail/include (CODE:403|SIZE:296)
++ https://$ip/webmail/index.php (CODE:302|SIZE:0)
++ https://$ip/webmail/locale (CODE:403|SIZE:295)
+==> DIRECTORY: https://$ip/webmail/plugins/
+==> DIRECTORY: https://$ip/webmail/src/
+==> DIRECTORY: https://$ip/webmail/themes/
 ```
