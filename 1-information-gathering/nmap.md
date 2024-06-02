@@ -1,7 +1,9 @@
 # Nmap
 
 ```bash
-nmap -A -p- -T5 <ip>
+nmap -A -p- -T5 $ip
+```
+```
 ...
 21/tcp  open  ftp        vsftpd 2.0.8 or later
 ...
@@ -20,7 +22,9 @@ nmap -A -p- -T5 <ip>
 ### FTP
 
 ```bash
-nmap -A -p21 -T5 <ip> --script ftp*
+nmap -A -p21 -T5 $ip --script ftp*
+```
+```
 ...
 |_ftp-anon: got code 500 "OOPS: vsftpd: refusing to run with writable root inside chroot()".
 | ftp-brute:
@@ -31,7 +35,9 @@ nmap -A -p21 -T5 <ip> --script ftp*
 ### SSH
 
 ```bash
-nmap -A -p22 -T5 <ip> --script ssh*
+nmap -A -p22 -T5 $ip --script ssh*
+```
+```
 ...
 | ssh-auth-methods:
 |   Supported authentication methods:
@@ -56,7 +62,9 @@ nmap -A -p22 -T5 <ip> --script ssh*
 ### HTTP(S)
 
 ```bash
-nmap -A -p80,443 -T5 <ip> --script http*
+nmap -A -p80,443 -T5 $ip --script http*
+```
+```
 ...
 |_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
 ...
@@ -65,7 +73,9 @@ nmap -A -p80,443 -T5 <ip> --script http*
 ### Imap(s)
 
 ```bash
-nmap -A -p143,993 -T5 <ip> --script imap*
+nmap -A -p143,993 -T5 $ip --script imap*
+```
+```
 ...
 | imap-brute:
 |   Accounts: No valid accounts found
