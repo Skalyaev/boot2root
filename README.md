@@ -39,10 +39,10 @@
 - [x] FTP vulnerability check: `msfconsole`
     * [x] Not logged in
     * [x] Using `anonymous`
-    * [x] Using `lmazard`
+    * [x] Using `lmezard`
 - [x] IMAP vulnerability check: `msfconsole`
     * [x] Not logged in
-    * [x] Using `lmazard`
+    * [x] Using `lmezard`
 - [x] SSH vulnerability check: `msfconsole`
     * [x] Not logged in
 - [ ] CVE check:
