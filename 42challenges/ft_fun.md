@@ -166,11 +166,11 @@ ZPY1Q.pcap-
 ZPY1Q.pcap-//file38
 ```
 
-Now we got to match each `return` with its `getme` function
+Now we got to match each `return` with its `getme()` function
 
 We can see that each `getme()` function is a '//file` number
 
-We notice that for each number `n` of `getme` files, there is a corresponding `return` file that is actually `n+1`:
+We notice that for each number `n` of `getme()` files, there is a corresponding `return` file that is actually `n+1`:
 
 ```
 331ZU.pcap:char getme1() {
@@ -276,4 +276,10 @@ int main() {
     printf("\n");
     printf("Now SHA-256 it and submit");
 }
+```
+```bash
+echo -n "Iheartpwnage" | sha256sum
+```
+```
+330b845f32185747e4f8ca15d40ca59796035c89ea809fb5d30f4da83ecf45a4  -
 ```
