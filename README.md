@@ -14,8 +14,10 @@
     * [port 443 (HTTPS)](/2-exploitation/https.md)
 - Post-exploitation
     * [as www-data](/3-post-exploitation/www-data.md)
+    * [as laurie](/3-post-exploitation/laurie.md)
 - 42challenges
     * [ft_fun](/42challenges/ft_fun.md)
+    * [bomb](/42challenges/bomb.md)
 
 ## Checklist
 - [x] Host port scanning `nmap`
