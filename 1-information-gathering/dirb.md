@@ -1,4 +1,4 @@
-# Ffuf
+# dirb
 
 ### Port 80 (HTTP)
 
