@@ -18,7 +18,7 @@ total 3052
 -rw-r----- 1 skalya skalya    10 13 août   2015 SK03K.pcap
 ```
 
-These are not real pcap files, and most of hit contain trash
+These are not real pcap files, and most of it contain trash
 
 After cleaning `BJPCP.pcap`, here is the content:
 ```c
