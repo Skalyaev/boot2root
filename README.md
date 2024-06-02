@@ -13,7 +13,7 @@
     * [Port 21 (FTP)](/2-exploitation/ftp.md)
     * [Port 443 (HTTPS)](/2-exploitation/https.md)
 - Post-exploitation
-    * [As `www-data`](/3-post-exploitation/www-data.md)
+    * [As www-data](/3-post-exploitation/www-data.md)
 - 42challenges
     * [ft_fun](/42challenges/ft_fun.md)
 
