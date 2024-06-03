@@ -16,8 +16,8 @@
     * [as www-data](/3-post-exploitation/www-data.md)
     * [as laurie](/3-post-exploitation/laurie.md)
     * [as thor](/3-post-exploitation/thor.md)
-    * [as zaz](/3-post-exploitation/zaz.md)
-    * [CVE-2016-5195 - dirtycow](/3-post-exploitation/dirtycow.md)
+    * [as zaz](/3-post-exploitation/zaz.md) `to root`
+    * [CVE-2016-5195 - dirtycow](/3-post-exploitation/dirtycow.md) `to root`
 - 42challenges
     * [ft_fun](/42challenges/ft_fun.md)
     * [bomb](/42challenges/bomb.md)
@@ -61,8 +61,8 @@
     * [x] [CVE-2021-3156](https://www.qualys.com/2021/01/26/cve-2021-3156/baron-samedit-heap-based-overflow-sudo.txt) - sudo Baron Samedit [[download](https://codeload.github.com/worawit/CVE-2021-3156/zip/main)]
     * [x] [CVE-2021-22555](https://github.com/google/security-research/blob/master/pocs/linux/cve-2021-22555/exploit.c) - Netfilter heap out-of-bounds write [[download](https://raw.githubusercontent.com/google/security-research/master/pocs/linux/cve-2021-22555/exploit.c)]
     * [x] [CVE-2019-18634](https://dylankatz.com/Analysis-of-CVE-2019-18634/) - sudo pwfeedback [[download](https://github.com/saleemrashid/sudo-cve-2019-18634/raw/master/exploit.c)]
-    * [ ] [CVE-2017-7308](https://googleprojectzero.blogspot.com/2017/05/exploiting-linux-kernel-via-packet.html) - af_packet [[download](https://raw.githubusercontent.com/xairy/kernel-exploits/master/CVE-2017-7308/poc.c)]
-    * [ ] [CVE-2017-6074](http://www.openwall.com/lists/oss-security/2017/02/22/3) - dccp [[download](https://www.exploit-db.com/download/41458)]
+    * [x] [CVE-2017-7308](https://googleprojectzero.blogspot.com/2017/05/exploiting-linux-kernel-via-packet.html) - af_packet [[download](https://raw.githubusercontent.com/xairy/kernel-exploits/master/CVE-2017-7308/poc.c)]
+    * [x] [CVE-2017-6074](http://www.openwall.com/lists/oss-security/2017/02/22/3) - dccp [[download](https://www.exploit-db.com/download/41458)]
     * [ ] [CVE-2017-5618](https://seclists.org/oss-sec/2017/q1/184) - setuid screen v4.5.0 LPE [[download](https://www.exploit-db.com/download/https://www.exploit-db.com/exploits/41154)]
     * [ ] [CVE-2017-1000370](https://www.qualys.com/2017/06/19/stack-clash/stack-clash.txt) - linux_offset2lib [[download](https://www.qualys.com/2017/06/19/stack-clash/linux_offset2lib.c)]
     * [ ] [CVE-2016-6663](https://legalhackers.com/advisories/MySQL-Maria-Percona-PrivEscRace-CVE-2016-6663-5616-Exploit.html) - mysql-exploit-chain [[download](http://legalhackers.com/exploits/CVE-2016-6663/mysql-privesc-race.c)]
