@@ -71,7 +71,6 @@
     * [ ] [CVE-2017-1000366](https://www.qualys.com/2017/06/19/stack-clash/stack-clash.txt) - linux_ldso_hwcap [[download](https://www.qualys.com/2017/06/19/stack-clash/linux_ldso_hwcap.c)]
     * [ ] [CVE-2016-6663](https://legalhackers.com/advisories/MySQL-Maria-Percona-PrivEscRace-CVE-2016-6663-5616-Exploit.html) - mysql-exploit-chain [[download](http://legalhackers.com/exploits/CVE-2016-6663/mysql-privesc-race.c)]
     * [ ] [CVE-2015-8660](http://www.halfdog.net/Security/2015/UserNamespaceOverlayfsSetuidWriteExec/) - overlayfs (ovl_setattr) [[download](https://www.exploit-db.com/download/39166)]
-    * [ ] [CVE-2015-8660](http://www.halfdog.net/Security/2015/UserNamespaceOverlayfsSetuidWriteExec/) - overlayfs (ovl_setattr) [[download](https://www.exploit-db.com/download/39230)]
     * [ ] [CVE-2014-5207](https://www.exploit-db.com/exploits/34923/) - fuse_suid [[download](https://www.exploit-db.com/download/34923)]
     * [ ] [CVE-2014-5119](http://googleprojectzero.blogspot.com/2014/08/the-poisoned-nul-byte-2014-edition.html) - __gconv_translit_find [[download](https://gitlab.com/exploit-database/exploitdb-bin-sploits/-/raw/main/bin-sploits/34421.tar.gz)]
     * [ ] [CVE-2014-0196](http://blog.includesecurity.com/2014/06/exploit-walkthrough-cve-2014-0196-pty-kernel-race-condition.html) - rawmodePTY [[download](https://www.exploit-db.com/download/33516)]
