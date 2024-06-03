@@ -54,7 +54,7 @@
     * [x] Using `laurie`
     * [x] Using `thor`
     * [x] Using `zaz`
-- [ ] CVE check:
+- [x] CVE check:
     * [x] [CVE-2016-5195](https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails) - dirtycow [[download](https://www.exploit-db.com/download/40839)]
     * [x] [CVE-2015-3202](http://seclists.org/oss-sec/2015/q2/520) - fuse (fusermount) [[download](https://www.exploit-db.com/download/37089)]
     * [x] [CVE-2014-4014](http://www.openwall.com/lists/oss-security/2014/06/10/4) - inode_capable [[download](https://www.exploit-db.com/download/33824)]
