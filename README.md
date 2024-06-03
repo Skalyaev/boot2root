@@ -15,9 +15,12 @@
 - Post-exploitation
     * [as www-data](/3-post-exploitation/www-data.md)
     * [as laurie](/3-post-exploitation/laurie.md)
+    * [as thor](/3-post-exploitation/thor.md)
+    * [as zaz](/3-post-exploitation/zaz.md)
 - 42challenges
     * [ft_fun](/42challenges/ft_fun.md)
     * [bomb](/42challenges/bomb.md)
+    * [turtle](/42challenges/turtle.md)
 
 ## Checklist
 - [x] Host port scanning `nmap`
@@ -47,6 +50,9 @@
     * [x] Using `lmezard`
 - [x] SSH vulnerability check: `msfconsole`
     * [x] Not logged in
+    * [x] Using `laurie`
+    * [x] Using `thor`
+    * [x] Using `zaz`
 - [ ] CVE check:
     * [ ] [CVE-2016-5195](https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails) - dirtycow [[download]()]
     * [ ] [CVE-2016-5195](https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails) - dirtycow 2 [[download](https://www.exploit-db.com/download/40839)]

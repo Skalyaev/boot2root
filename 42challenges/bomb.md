@@ -977,7 +977,13 @@ NO SPACE IN THE PASSWORD (password is case sensitive).
 
 - `Publicspeakingisveryeasy.126241207201b2149opekmq426315` doesn't work
 
-We might need to use the password of the secret phase to modify the password we got without secret phase
+There must be a last step to find the password
+
+- `1001` is a valid binary number, his decimal value is `9`, which is the password for phase 4, we might need to play with binary representation of the password
+
+- The binary representation of the last password `426315` is `1101000000101001011`, if we take the `9` last bits of it and shift them to the left, we get `1101000000010010111` which is `426135` in decimal
+
+- `Publicspeakingisveryeasy.126241207201b2149opekmq426135` works
 
 ## Credentials found
 
@@ -985,4 +991,4 @@ We might need to use the password of the secret phase to modify the password we 
 
 | Login | Password |
 |-|-|
-| `thor` | [Plain] `` |
+| `thor` | [Plain] `Publicspeakingisveryeasy.126241207201b2149opekmq426135` |
