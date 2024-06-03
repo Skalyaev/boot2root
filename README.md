@@ -54,7 +54,7 @@
     * [x] Using `laurie`
     * [x] Using `thor`
     * [x] Using `zaz`
-- [x] CVE check:
+- [ ] CVE check:
     * [x] [CVE-2016-5195](https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails) - dirtycow [[download](https://www.exploit-db.com/download/40839)]
     * [x] [CVE-2014-4014](http://www.openwall.com/lists/oss-security/2014/06/10/4) - inode_capable [[download](https://www.exploit-db.com/download/33824)] `CAP_SYS_ADMIN required`
     * [x] [CVE-2021-22555](https://github.com/google/security-research/blob/master/pocs/linux/cve-2021-22555/exploit.c) - Netfilter heap out-of-bounds write [[download](https://raw.githubusercontent.com/google/security-research/master/pocs/linux/cve-2021-22555/exploit.c)] `ip_tables.ko must be loaded`
