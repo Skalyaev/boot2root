@@ -65,8 +65,6 @@
     * [ ] [CVE-2017-6074](http://www.openwall.com/lists/oss-security/2017/02/22/3) - dccp [[download](https://www.exploit-db.com/download/41458)]
     * [ ] [CVE-2017-5618](https://seclists.org/oss-sec/2017/q1/184) - setuid screen v4.5.0 LPE [[download](https://www.exploit-db.com/download/https://www.exploit-db.com/exploits/41154)]
     * [ ] [CVE-2017-1000370](https://www.qualys.com/2017/06/19/stack-clash/stack-clash.txt) - linux_offset2lib [[download](https://www.qualys.com/2017/06/19/stack-clash/linux_offset2lib.c)]
-    * [ ] [CVE-2017-1000366](https://www.qualys.com/2017/06/19/stack-clash/stack-clash.txt) - linux_ldso_dynamic [[download](https://www.qualys.com/2017/06/19/stack-clash/linux_ldso_dynamic.c)]
-    * [ ] [CVE-2017-1000366](https://www.qualys.com/2017/06/19/stack-clash/stack-clash.txt) - linux_ldso_hwcap [[download](https://www.qualys.com/2017/06/19/stack-clash/linux_ldso_hwcap.c)]
     * [ ] [CVE-2016-6663](https://legalhackers.com/advisories/MySQL-Maria-Percona-PrivEscRace-CVE-2016-6663-5616-Exploit.html) - mysql-exploit-chain [[download](http://legalhackers.com/exploits/CVE-2016-6663/mysql-privesc-race.c)]
     * [ ] [CVE-2015-8660](http://www.halfdog.net/Security/2015/UserNamespaceOverlayfsSetuidWriteExec/) - overlayfs (ovl_setattr) [[download](https://www.exploit-db.com/download/39166)]
     * [ ] [CVE-2014-5207](https://www.exploit-db.com/exploits/34923/) - fuse_suid [[download](https://www.exploit-db.com/download/34923)]
