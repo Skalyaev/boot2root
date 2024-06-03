@@ -56,10 +56,9 @@
     * [x] Using `zaz`
 - [ ] CVE check:
     * [x] [CVE-2016-5195](https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails) - dirtycow [[download](https://www.exploit-db.com/download/40839)]
-    * [ ] [CVE-2015-3202](http://seclists.org/oss-sec/2015/q2/520) - fuse (fusermount) [[download](https://www.exploit-db.com/download/37089)]
-    * [ ] [CVE-2014-4699](http://www.openwall.com/lists/oss-security/2014/07/08/16) - ptrace/sysret [[download](https://www.exploit-db.com/download/34134)]
-    * [ ] [CVE-2014-4014](http://www.openwall.com/lists/oss-security/2014/06/10/4) - inode_capable [[download](https://www.exploit-db.com/download/33824)]
-    * [ ] [CVE-2022-32250](https://research.nccgroup.com/2022/09/01/settlers-of-netlink-exploiting-a-limited-uaf-in-nf_tables-cve-2022-32250/) - nft_object UAF (NFT_MSG_NEWSET) [[download](https://raw.githubusercontent.com/theori-io/CVE-2022-32250-exploit/main/exp.c)]
+    * [x] [CVE-2015-3202](http://seclists.org/oss-sec/2015/q2/520) - fuse (fusermount) [[download](https://www.exploit-db.com/download/37089)]
+    * [x] [CVE-2014-4014](http://www.openwall.com/lists/oss-security/2014/06/10/4) - inode_capable [[download](https://www.exploit-db.com/download/33824)]
+    * [x] [CVE-2022-32250](https://research.nccgroup.com/2022/09/01/settlers-of-netlink-exploiting-a-limited-uaf-in-nf_tables-cve-2022-32250/) - nft_object UAF (NFT_MSG_NEWSET) [[download](https://raw.githubusercontent.com/theori-io/CVE-2022-32250-exploit/main/exp.c)]
     * [ ] [CVE-2021-3156](https://www.qualys.com/2021/01/26/cve-2021-3156/baron-samedit-heap-based-overflow-sudo.txt) - sudo Baron Samedit [[download](https://codeload.github.com/blasty/CVE-2021-3156/zip/main)]
     * [ ] [CVE-2021-3156](https://www.qualys.com/2021/01/26/cve-2021-3156/baron-samedit-heap-based-overflow-sudo.txt) - sudo Baron Samedit 2 [[download](https://codeload.github.com/worawit/CVE-2021-3156/zip/main)]
     * [ ] [CVE-2021-22555](https://google.github.io/security-research/pocs/linux/cve-2021-22555/writeup.html) - Netfilter heap out-of-bounds write [[download](https://raw.githubusercontent.com/google/security-research/master/pocs/linux/cve-2021-22555/exploit.c)]
