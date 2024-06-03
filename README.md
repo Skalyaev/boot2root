@@ -64,7 +64,6 @@
     * [ ] [CVE-2021-3156](https://www.qualys.com/2021/01/26/cve-2021-3156/baron-samedit-heap-based-overflow-sudo.txt) - sudo Baron Samedit 2 [[download](https://codeload.github.com/worawit/CVE-2021-3156/zip/main)]
     * [ ] [CVE-2021-22555](https://google.github.io/security-research/pocs/linux/cve-2021-22555/writeup.html) - Netfilter heap out-of-bounds write [[download](https://raw.githubusercontent.com/google/security-research/master/pocs/linux/cve-2021-22555/exploit.c)]
     * [ ] [CVE-2019-18634](https://dylankatz.com/Analysis-of-CVE-2019-18634/) - sudo pwfeedback [[download](https://github.com/saleemrashid/sudo-cve-2019-18634/raw/master/exploit.c)]
-    * [ ] [CVE-2019-15666](https://duasynt.com/blog/ubuntu-centos-redhat-privesc) - XFRM_UAF
     * [ ] [CVE-2017-7308](https://googleprojectzero.blogspot.com/2017/05/exploiting-linux-kernel-via-packet.html) - af_packet [[download](https://raw.githubusercontent.com/xairy/kernel-exploits/master/CVE-2017-7308/poc.c)]
     * [ ] [CVE-2017-6074](http://www.openwall.com/lists/oss-security/2017/02/22/3) - dccp [[download](https://www.exploit-db.com/download/41458)]
     * [ ] [CVE-2017-5618](https://seclists.org/oss-sec/2017/q1/184) - setuid screen v4.5.0 LPE [[download](https://www.exploit-db.com/download/https://www.exploit-db.com/exploits/41154)]
