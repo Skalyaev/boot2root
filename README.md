@@ -54,8 +54,7 @@
     * [x] Using `thor`
     * [x] Using `zaz`
 - [ ] CVE check:
-    * [ ] [CVE-2016-5195](https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails) - dirtycow [[download](https://www.exploit-db.com/download/40611)]
-    * [ ] [CVE-2016-5195](https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails) - dirtycow 2 [[download](https://www.exploit-db.com/download/40839)]
+    * [x] [CVE-2016-5195](https://github.com/dirtycow/dirtycow.github.io/wiki/VulnerabilityDetails) - dirtycow [[download](https://www.exploit-db.com/download/40839)]
     * [ ] [CVE-2015-3202](http://seclists.org/oss-sec/2015/q2/520) - fuse (fusermount) [[download](https://www.exploit-db.com/download/37089)]
     * [ ] [CVE-2014-4699](http://www.openwall.com/lists/oss-security/2014/07/08/16) - ptrace/sysret [[download](https://www.exploit-db.com/download/34134)]
     * [ ] [CVE-2014-4014](http://www.openwall.com/lists/oss-security/2014/06/10/4) - inode_capable [[download](https://www.exploit-db.com/download/33824)]
