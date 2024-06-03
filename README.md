@@ -17,6 +17,7 @@
     * [as laurie](/3-post-exploitation/laurie.md)
     * [as thor](/3-post-exploitation/thor.md)
     * [as zaz](/3-post-exploitation/zaz.md)
+    * [CVE-2016-5195 - dirtycow](/3-post-exploitation/dirtycow.md)
 - 42challenges
     * [ft_fun](/42challenges/ft_fun.md)
     * [bomb](/42challenges/bomb.md)

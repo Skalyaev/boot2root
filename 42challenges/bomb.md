@@ -1,6 +1,6 @@
 # bomb
 
-We reverse the `bomb` executable via [dogbolt](https://dogbolt.org/), then we clean/rework the source code:
+We reverse the `bomb` executable via [dogbolt](https://dogbolt.org/), then we 'clean' the source code:
 
 <details><summary>show</summary>
 
@@ -608,47 +608,6 @@ int phase_1(_BYTE *a1)
   return result;
 }
 ```
-
-```c
-int strings_not_equal(_BYTE *a1, _BYTE *a2)
-{
-  int v2;
-  _BYTE *v4;
-  _BYTE *v5;
-
-  v2 = string_length(a1);
-  if ( v2 != string_length(a2) )
-    return 1;
-  v4 = a1;
-  v5 = a2;
-  if ( *a1 )
-  {
-    while ( *v4 == *v5 )
-    {
-      ++v4;
-      ++v5;
-      if ( !*v4 )
-        return 0;
-    }
-    return 1;
-  }
-  return 0;
-}
-```
-
-```c
-
-int string_length(_BYTE *a1)
-{
-  _BYTE *v1;
-  int result;
-
-  v1 = a1;
-  for ( result = 0; *v1; ++result )
-    ++v1;
-  return result;
-}
-```
 > Public speaking is very easy.
 
 ## Phase 2
@@ -669,19 +628,6 @@ int phase_2(char *s)
     if ( v3[i] != result )
       explode_bomb();
   }
-  return result;
-}
-```
-
-```c
-int read_six_numbers(char *s, int a2)
-{
-  int result;
-
-  result = sscanf(s, "%d %d %d %d %d %d", a2, a2 + 4,
-                  a2 + 8, a2 + 12, a2 + 16, a2 + 20);
-  if ( result <= 5 )
-    explode_bomb();
   return result;
 }
 ```
@@ -769,7 +715,6 @@ int phase_4(char *s)
   return result;
 }
 ```
-
 ```c
 int func4(int a1)
 {
@@ -802,46 +747,6 @@ int phase_5(_BYTE *a1)
   result = strings_not_equal(v3, "giants");
   if ( result )
     explode_bomb();
-  return result;
-}
-```
-
-```c
-int strings_not_equal(_BYTE *a1, _BYTE *a2)
-{
-  int v2;
-  _BYTE *v4;
-  _BYTE *v5;
-
-  v2 = string_length(a1);
-  if ( v2 != string_length(a2) )
-    return 1;
-  v4 = a1;
-  v5 = a2;
-  if ( *a1 )
-  {
-    while ( *v4 == *v5 )
-    {
-      ++v4;
-      ++v5;
-      if ( !*v4 )
-        return 0;
-    }
-    return 1;
-  }
-  return 0;
-}
-```
-
-```c
-int string_length(_BYTE *a1)
-{
-  _BYTE *v1;
-  int result;
-
-  v1 = a1;
-  for ( result = 0; *v1; ++result )
-    ++v1;
   return result;
 }
 ```
@@ -905,19 +810,6 @@ int phase_6(char *s)
   return result;
 }
 ```
-
-```c
-int read_six_numbers(char *s, int a2)
-{
-  int result;
-
-  result = sscanf(s, "%d %d %d %d %d %d", a2, a2 + 4,
-                  a2 + 8, a2 + 12, a2 + 16, a2 + 20);
-  if ( result <= 5 )
-    explode_bomb();
-  return result;
-}
-```
 > 4 2 6 3 1 5
 
 ## Secret Phase
@@ -938,7 +830,6 @@ void secret_phase()
   phase_defused();
 }
 ```
-
 ```c
 int fun7(_DWORD *a1, int a2)
 {
@@ -979,9 +870,9 @@ NO SPACE IN THE PASSWORD (password is case sensitive).
 
 There must be a last step to find the password
 
-- `1001` is a valid binary number, his decimal value is `9`, which is the password for phase 4, we might need to play with binary representation of the password
+- `1001` is a valid binary number, his decimal value is `9`, which is the password for phase 4, we might need to play with binary representation of the final password
 
-- The binary representation of the last password `426315` is `1101000000101001011`, if we take the `9` last bits of it and shift them to the left, we get `1101000000010010111` which is `426135` in decimal
+- The binary representation of the password for the last phase (`426315`) is `1101000000101001011`, if we take the `9` last bits of it and do a [circular left shift](https://en.wikipedia.org/wiki/Circular_shift) with them, we get `1101000000010010111` which is `426135` in decimal
 
 - `Publicspeakingisveryeasy.126241207201b2149opekmq426135` works
 
@@ -991,4 +882,4 @@ There must be a last step to find the password
 
 | Login | Password |
 |-|-|
-| `thor` | [Plain] `Publicspeakingisveryeasy.126241207201b2149opekmq426135` |
+| `thor` | `Publicspeakingisveryeasy.126241207201b2149opekmq426135` |

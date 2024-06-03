@@ -3,7 +3,6 @@
 ```bash
 cat turtle
 ```
-
 <details><summary>show</summary>
 
 ```
@@ -1481,9 +1480,9 @@ Can you digest the message? :)
 ```
 </details>
 
-We can draw this message using turtle python library
+We can draw this message using `turtle` python library
 
-<details><summary>part 1 (S)</summary>
+<details><summary>part 1</summary>
 
 ```python
 import turtle
@@ -2214,8 +2213,9 @@ t.right(1)
 t.forward(50)
 ```
 </details>
+> `S`
 
-<details><summary>part 2 (L)</summary>
+<details><summary>part 2</summary>
 
 ```python
 import turtle
@@ -2227,8 +2227,9 @@ t.right(90)
 t.forward(120)
 ```
 </details>
+> `L`
 
-<details><summary>part 3 (A)</summary>
+<details><summary>part 3</summary>
 
 ```python
 import turtle
@@ -2243,8 +2244,9 @@ t.right(120)
 t.forward(50)
 ```
 </details>
+> `A`
 
-<details><summary>part 4 (S)</summary>
+<details><summary>part 4</summary>
 
 ```python
 import turtle
@@ -2975,8 +2977,9 @@ t.right(1)
 t.forward(50)
 ```
 </details>
+> `S`
 
-<details><summary>part 5 (H)</summary>
+<details><summary>part 5</summary>
 
 ```python
 import turtle
@@ -2992,14 +2995,13 @@ t.forward(100)
 t.backward(200)
 ```
 </details>
+> `H`
 
 So we got `SLASH`
 
 ```bash
 echo -n "SLASH" | md5sum
-```
-```
-646da671ca01bb5d84dbb5fb2238dc8e
+#646da671ca01bb5d84dbb5fb2238dc8e
 ```
 
 ## Credentials found
@@ -3008,4 +3010,4 @@ echo -n "SLASH" | md5sum
 
 | Login | Password |
 |-|-|
-| `zaz` | [Plain] `646da671ca01bb5d84dbb5fb2238dc8e` |
+| `zaz` | `646da671ca01bb5d84dbb5fb2238dc8e` |
