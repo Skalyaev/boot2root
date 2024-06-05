@@ -62,7 +62,7 @@ nmap -A -p80,443 -T5 $ip --script http*
 #...
 ```
 
-### Imap(s)
+### IMAP(S)
 
 ```bash
 nmap -A -p143,993 -T5 $ip --script imap*
