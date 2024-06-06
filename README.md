@@ -18,4 +18,3 @@
     * [as thor](/3-post-exploitation/thor.md)
     * [as zaz](/3-post-exploitation/zaz.md)
     * [kernel exploits](/3-post-exploitation/kernel.md)
-    * [process exploits](/3-post-exploitation/process.md)
